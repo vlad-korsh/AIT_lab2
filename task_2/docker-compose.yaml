@@ -1,0 +1,10 @@
+version: '1.0'
+name: pytorch_server
+
+services:
+  pythotch:
+    restart: unless-stopped
+    image: labai2:0.1
+    volumes:
+      - C:\docker_ssau\Artificial-Intelligence-Lab-2\task_2:/usr/app/src
+    command: python3 /usr/app/src/task2_script.py
